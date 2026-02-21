@@ -1,6 +1,12 @@
+pub mod bed;
 pub mod calibration;
 pub mod connection;
+pub mod crop;
 pub mod device;
+pub mod dto;
+pub mod edge_gateway;
 pub mod edge_runtime_config;
 pub mod feedback;
 pub mod hardware;
+pub mod strategy;
+pub mod zone;
