@@ -13,8 +13,8 @@ pub enum StrategyTarget {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Strategy {
-    #[serde(rename = "_id")]
-    pub id: String,
+    #[serde(rename = "_id", skip_serializing_if = "Option::is_none")]
+    pub id: Option<String>,
 
     pub apply_to: StrategyTarget,
     pub name: String,
